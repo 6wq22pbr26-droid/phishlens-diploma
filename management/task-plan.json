@@ -1,0 +1,138 @@
+{
+  "source": "Supplied review package task schedule and YouTrack screenshots; English labels shortened for readability. Not a live export.",
+  "tasks": [
+    {
+      "id": "PHD-1",
+      "deliverable": "Requirements and MVP scope",
+      "planned_owner": "Aiym",
+      "due": "2026-10-26",
+      "snapshot_status": "Review"
+    },
+    {
+      "id": "PHD-2",
+      "deliverable": "Architecture and backend structure",
+      "planned_owner": "Aiym",
+      "due": "2026-11-13",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-3",
+      "deliverable": "Manifest V3 and URL checking",
+      "planned_owner": "Aiym",
+      "due": "2026-12-11",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-4",
+      "deliverable": "Phishing analysis REST API",
+      "planned_owner": "Aiym",
+      "due": "2026-12-25",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-5",
+      "deliverable": "ML model integration",
+      "planned_owner": "Aiym",
+      "due": "2027-03-26",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-6",
+      "deliverable": "Popup and warning UI",
+      "planned_owner": "Sabina",
+      "due": "2026-12-18",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-7",
+      "deliverable": "Settings and localization",
+      "planned_owner": "Sabina",
+      "due": "2027-02-12",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-8",
+      "deliverable": "Extension/API integration",
+      "planned_owner": "Sabina",
+      "due": "2027-01-15",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-9",
+      "deliverable": "Results and feedback storage",
+      "planned_owner": "Sabina",
+      "due": "2027-01-22",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-10",
+      "deliverable": "Functional, load and usability testing",
+      "planned_owner": "Sabina",
+      "due": "2027-04-23",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-11",
+      "deliverable": "Research and dataset selection",
+      "planned_owner": "Alibek*",
+      "due": "2026-11-06",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-12",
+      "deliverable": "Data preparation and URL features",
+      "planned_owner": "Alibek*",
+      "due": "2026-11-27",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-13",
+      "deliverable": "Baseline model training",
+      "planned_owner": "Alibek*",
+      "due": "2027-01-15",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-14",
+      "deliverable": "Model evaluation",
+      "planned_owner": "Alibek*",
+      "due": "2027-03-12",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-15",
+      "deliverable": "Explanations and model packaging",
+      "planned_owner": "Alibek*",
+      "due": "2027-02-26",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-16",
+      "deliverable": "Reputation integration",
+      "planned_owner": "Aiym",
+      "due": "2027-02-05",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-17",
+      "deliverable": "Caching",
+      "planned_owner": "Team / verify assignee",
+      "due": "2027-02-19",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-18",
+      "deliverable": "Docker packaging",
+      "planned_owner": "Team / verify assignee",
+      "due": "2027-01-29",
+      "snapshot_status": "Backlog"
+    },
+    {
+      "id": "PHD-19",
+      "deliverable": "Continuous integration",
+      "planned_owner": "Team / verify assignee",
+      "due": "2026-12-04",
+      "snapshot_status": "Backlog"
+    }
+  ]
+}
