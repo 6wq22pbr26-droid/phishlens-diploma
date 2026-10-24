@@ -1,0 +1,90 @@
+1. Participation consent
+• I am 18 or older, currently a university student, have read the information above, and voluntarily agree to participate.
+
+2. What is your current level of study?
+• Undergraduate, year 1
+• Undergraduate, year 2
+• Undergraduate, year 3
+• Undergraduate, year 4 or above
+• Master’s / doctoral student
+
+3. Which browser do you use most often on a computer or laptop?
+• Google Chrome
+• Microsoft Edge
+• Safari
+• Firefox
+• Another browser
+• I do not use a browser on a computer or laptop
+
+4. How familiar are you with the term “phishing”?
+• I have never heard of it
+• I have heard of it but cannot explain it
+• I have a general understanding of it
+• I understand it well and can name warning signs
+• Not sure
+
+5. In the past 3 months, how often have you encountered links or websites that you considered suspicious?
+• Never
+• 1–2 times
+• 3–5 times
+• More than 5 times
+• I do not remember / cannot tell
+
+6. What do you usually do before entering a password or making a payment on an unfamiliar website? Select all that apply.
+• Check the spelling of the website address
+• Find the official website through an independent source
+• Check for HTTPS / a secure connection indicator
+• Check reviews or the website’s reputation
+• Rely on browser or antivirus warnings
+• Usually check nothing (select this option only)
+• Avoid entering information on unfamiliar websites (select this option only)
+
+7. Which type of warning about a suspicious website would be easiest for you to understand?
+• A short message: “Possible phishing”
+• A message explaining a specific reason and a recommended action
+• A numerical risk score
+• A detailed technical description of warning signs
+• None / I do not need these warnings
+• Not sure
+
+8. The extension could check a page locally on your device or also send the domain name to an external reputation service. Which option would you prefer?
+• Local checks only, without sending the domain name
+• External checks with separate permission for each website
+• External checks after one-time consent in settings
+• I would not use this kind of extension
+• I need more information / not sure
+
+9. What did you do the last time a website or link seemed suspicious? Select your main action.
+• Did not open the link / closed the website
+• Checked the address or found the official website
+• Used antivirus software or a link-checking service
+• Asked another person for advice
+• Continued using the website
+• Took another action
+• This has not happened / I do not remember
+
+10. Which language do you prefer for security warnings?
+• Russian
+• Kazakh
+• English
+• Another language
+• No preference
+
+11. If an extension warned you about signs of phishing and explained the reason, how likely would you be to try it? This asks about interest in an idea, not an evaluation of a finished product.
+• Definitely would not try it
+• Probably would not try it
+• Not sure yet
+• Probably would try it
+• Definitely would try it
+
+12. What might prevent you from using this kind of extension? Select all that apply.
+• Slower browser performance
+• Frequent or incorrect warnings
+• Concerns about data privacy
+• Complicated installation or setup
+• Unclear explanations
+• Incompatibility with my browser or device
+• I do not see a need for this kind of extension
+• Another reason
+• None of the above (select this option only)
+• Not sure (select this option only)

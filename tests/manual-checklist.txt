@@ -1,0 +1,13 @@
+PhishLens interface and package review — 24 October 2026
+
+1. Open prototype/index.html locally; confirm the visible demonstration disclaimer.
+2. Select Loading, Low risk, Warning and Unavailable. Check the heading, reason and limitations.
+3. Expand technical details; confirm the text describes illustrative data.
+4. In Unavailable, click Retry demonstration and verify the loading state.
+5. Use the keyboard to reach state buttons and Details. Inspect a narrow viewport.
+6. Confirm no network calls occur. Planned settings are disabled and do not imply implemented services.
+7. Check report references, original evidence pages and role/date consistency.
+8. In GitHub, verify uploaded files, real invitation acceptance, review and commission access.
+9. In YouTrack, verify account mapping, exact board URL and links to the relevant repository artefacts.
+
+These checks do not establish detection quality, runtime performance, real user testing or fulfilment of the missing discussion requirement. Record only checks actually performed.

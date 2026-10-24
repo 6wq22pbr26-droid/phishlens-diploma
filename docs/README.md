@@ -1,10 +1,16 @@
-# PhishLens submission documents
+# Project documents
 
-Checkpoint: 24 October 2026.
+Start with the [final report](REPORT.md), containing all 33 original PDF pages.
 
-- `01_PhishLens_Consolidated_Report.pdf`: main report, including survey analysis and supplied evidence.
-- `02_YouTrack_Board_and_Tasks.pdf`: separate readable board/task screenshot PDF.
-- Word files: editable report, preserved MVP scope, supervisor feedback and change record.
-- `PhishLens_Source_Package.zip`: complete structured source package, diagrams, English interactive mock-up, original evidence and task plan. Extract it before opening `prototype/index.html`.
+- [Original PDF](SE-2422_Pangerey_ProbPeriod1.pdf)
+- [Requirements](01_Requirements_and_MVP_Scope.md)
+- [Supervisor feedback](02_Supervisor_Feedback_Record.md) · [Word version](02_Supervisor_Feedback_Record.docx)
+- [Team response](03_Team_Response_and_Change_Record.md)
+- [YouTrack evidence PDF](02_YouTrack_Board_and_Tasks.pdf)
+- [Sources catalogue](sources.json)
+- [Requirements data](requirements.json)
+- [Survey questions](survey-questions.txt)
+- [Version notes](VERSION_NOTES.md)
+- [Complete source package](PhishLens_Source_Package.zip)
 
-The project remains at the analysis and design stage. No implemented detector or model-quality result is claimed. The report discloses missing discussion/client-agreement evidence and unverified access/contribution status.
+[Architecture](../diagrams/README.md) · [Prototype](../prototype/README.md) · [Task plan](../management/README.md)

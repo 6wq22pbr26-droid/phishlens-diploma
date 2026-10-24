@@ -1,0 +1,6 @@
+flowchart LR
+ U[University student] --> E[PhishLens extension]
+ E --> U
+ M[Model build pipeline] -->|Versioned model and schema| E
+ E -. Optional consented request .-> A[FastAPI service]
+ A -. Optional later integration .-> R[Reputation provider]

@@ -1,0 +1,8 @@
+flowchart TB
+ P[Popup and view model] <--> C[MV3 event coordinator]
+ C --> F[URL feature pipeline]
+ F --> M[Local model adapter]
+ M --> X[Risk result and explanation mapper]
+ X --> P
+ C -. Optional .-> A[API adapter]
+ A -. Explicit consent .-> B[FastAPI / reputation]
