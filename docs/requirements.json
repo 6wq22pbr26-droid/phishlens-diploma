@@ -1,0 +1,44 @@
+{
+  "stage": "analysis and design",
+  "functional": [
+    [
+      "FR-01",
+      "Check the active page URL on supported navigation events. Ignore internal browser pages and handle missing or invalid URLs without crashing."
+    ],
+    [
+      "FR-02",
+      "Apply a reproducible feature pipeline and baseline model. Return a documented risk result; show unavailable or uncertain results explicitly."
+    ],
+    [
+      "FR-03",
+      "Display the result in the popup with understandable reasons linked to observable indicators. Present the result as a risk assessment, with limitations."
+    ],
+    [
+      "FR-04",
+      "Define the extension and ML input/output contract. Provide a FastAPI service with validated schemas, documented responses, and clear failure handling."
+    ],
+    [
+      "FR-05",
+      "Keep browsing history off the server. Document any individual URL or domain sent for a selected reputation check and review this data flow before enabling it."
+    ],
+    [
+      "FR-06",
+      "Make the extension installable in developer mode from the repository. Document installation, startup, a safe demonstration, and known limitations."
+    ]
+  ],
+  "nonfunctional": [
+    [
+      "NFR-01",
+      "Detection quality: proposed F1 target of at least 0.90 on held-out data. Report precision, recall, F1, ROC-AUC, class balance, and errors. Split and deduplicate data to reduce leakage; do not tune on the final test set."
+    ],
+    [
+      "NFR-02",
+      "Latency: proposed local feature extraction plus inference target of at most 200 ms. Record browser, hardware, model, and measurement method. Measure external lookup/API latency separately and discuss the end-to-end result."
+    ],
+    [
+      "NFR-03",
+      "Reliability and usability: show loading, unavailable, timeout, and error states. Test safe examples without requiring users to open live phishing sites. Evaluate multilingual text and usability in the later system evaluation."
+    ]
+  ],
+  "note": "Targets, not measured results. PHD-1 due 2026-10-26; checkpoint due 2026-10-24."
+}

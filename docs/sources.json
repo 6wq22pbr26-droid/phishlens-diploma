@@ -1,0 +1,92 @@
+[
+  {
+    "id": "S01",
+    "citation": "Lin Y. et al. (2021). Phishpedia: A Hybrid Deep Learning Based Approach to Visually Identify Phishing Webpages. USENIX Security, 3793–3810.",
+    "url": "https://www.usenix.org/conference/usenixsecurity21/presentation/lin",
+    "review": "Phishpedia identifies brand impersonation through logo recognition and domain comparison. This makes a brand mismatch explainable. A maintained reference set and visual inference are required; the published evaluation does not establish performance on our browser or local audience. We retain the idea of linking warnings to observable evidence, while excluding a full visual pipeline from the first MVP."
+  },
+  {
+    "id": "S02",
+    "citation": "Liu R. et al. (2022). Inferring Phishing Intention via Webpage Appearance and Dynamics: A Deep Vision Based Approach. USENIX Security, 1633–1650.",
+    "url": "https://www.usenix.org/conference/usenixsecurity22/presentation/liu-ruofan",
+    "review": "PhishIntention combines apparent brand identity with credential-taking intent and page interaction. It shows why visual similarity alone may produce misleading alerts. Dynamic interaction adds cost and complexity. For PhishLens, later DOM analysis should examine structure without collecting form values or interacting with live phishing pages."
+  },
+  {
+    "id": "S03",
+    "citation": "Liu R. et al. (2023). Knowledge Expansion and Counterfactual Interaction for Reference-Based Phishing Detection. USENIX Security, 4139–4156.",
+    "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/liu-ruofan",
+    "review": "DynaPhish expands reference knowledge and explores pages that lack familiar branding. This addresses coverage limits of fixed reference lists, but maintaining and validating the knowledge base becomes part of the system. Our evaluation should include unfamiliar brands; absence of a known logo cannot be treated as evidence of safety."
+  },
+  {
+    "id": "S04",
+    "citation": "Liu R. et al. (2024). Less Defined Knowledge and More True Alarms: Reference-based Phishing Detection without a Pre-defined Reference List. USENIX Security, 523–540.",
+    "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/liu-ruofan",
+    "review": "PhishLLM uses language-model knowledge and validation to reduce dependence on a predefined brand list. This offers broad brand coverage but introduces model reliability and external-service dependencies. We exclude an LLM from the mandatory local inference path and will express reasons from measured features instead of generating unverified accusations."
+  },
+  {
+    "id": "S05",
+    "citation": "Li Y. et al. (2024). KnowPhish: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing Reference-Based Phishing Detection. USENIX Security, 793–810.",
+    "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/li-yuexin",
+    "review": "KnowPhish combines multimodal brand knowledge with textual and visual information, including cases where logos alone are insufficient. The knowledge infrastructure exceeds the first MVP. The transferable lesson is to evaluate coverage across site types and brands rather than assume one visual cue is universal."
+  },
+  {
+    "id": "S06",
+    "citation": "Ji F. et al. (2025). Evaluating the Effectiveness and Robustness of Visual Similarity-based Phishing Detection Models. USENIX Security, 3201–3220.",
+    "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/ji",
+    "review": "The authors examine real-world effectiveness and robustness of visual similarity detectors, including evasion through visual changes. Their findings concern the evaluated visual approaches, not every phishing model. They motivate independent testing, distribution-shift checks and explicit error analysis rather than reporting a single favourable random-split score."
+  },
+  {
+    "id": "S07",
+    "citation": "Ribeiro M. T., Singh S., Guestrin C. (2016). “Why Should I Trust You?”: Explaining the Predictions of Any Classifier. KDD, 1135–1144.",
+    "url": "https://doi.org/10.1145/2939672.2939778",
+    "review": "LIME approximates a model locally with an interpretable explanation. A local approximation can help inspect a prediction, but its stability and perturbation assumptions must be checked. We will compare explanation consistency and runtime; a model explanation is not proof that a website is malicious."
+  },
+  {
+    "id": "S08",
+    "citation": "Lundberg S. M., Lee S.-I. (2017). A Unified Approach to Interpreting Model Predictions. NeurIPS 30.",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html",
+    "review": "SHAP assigns feature contributions to model predictions. This supports analysis of which URL features influence a score, subject to the model and explanation assumptions. Contributions do not establish causality. We will check whether a compact set of contributions can be translated faithfully into user-facing reasons within the latency budget."
+  },
+  {
+    "id": "S09",
+    "citation": "Prasad A., Chandra S. (2024). PhiUSIIL Phishing URL (Website). UCI Machine Learning Repository.",
+    "url": "https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset",
+    "review": "Candidate dataset: 235,795 instances and 54 features, with 134,850 legitimate and 100,945 phishing cases. The original label is 1 for legitimate and 0 for phishing; evaluation will use phishing_positive = 1 - label. The CC BY 4.0 attribution must be retained. URL and page-derived features must be separated; dataset availability does not establish suitability for our deployment."
+  },
+  {
+    "id": "S10",
+    "citation": "Google. Safe Browsing API documentation.",
+    "url": "https://developers.google.com/safe-browsing",
+    "review": "A candidate optional reputation source using unsafe-resource lists. No match is not a guarantee of safety. The documented API is for non-commercial use; deployment terms and request data must be reviewed before integration."
+  },
+  {
+    "id": "S11",
+    "citation": "Microsoft. Microsoft Edge support for Microsoft Defender SmartScreen.",
+    "url": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-security-smartscreen",
+    "review": "SmartScreen combines reputation and page analysis with browser warnings. It is a functional comparison point, not merely a blacklist. Public documentation does not disclose every internal feature or model."
+  },
+  {
+    "id": "S12",
+    "citation": "Netcraft. Browser Extension.",
+    "url": "https://www.netcraft.com/resources/apps-and-extensions/browser-extension",
+    "review": "The extension offers threat warnings, site information and reporting. These are relevant user-flow comparisons. Public product descriptions do not establish a directly comparable accuracy score or a fully local implementation."
+  },
+  {
+    "id": "S13",
+    "citation": "Google. Extension service worker basics. Chrome for Developers.",
+    "url": "https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/basics",
+    "review": "Manifest V3 service workers coordinate event-driven extension logic. Code must be packaged consistently with extension constraints. Model runtime, lifecycle and content-security-policy compatibility still need a working integration test."
+  },
+  {
+    "id": "S14",
+    "citation": "Microsoft. ONNX Runtime Web tutorials.",
+    "url": "https://onnxruntime.ai/docs/tutorials/web/",
+    "review": "Browser inference is supported by ONNX Runtime Web. Model export, supported operators, bundle size, execution context and actual latency require validation in the chosen extension environment."
+  },
+  {
+    "id": "S15",
+    "citation": "FastAPI. Features.",
+    "url": "https://fastapi.tiangolo.com/features/",
+    "review": "Validated data models and generated OpenAPI documentation support a clear extension/API contract. Framework selection alone does not guarantee privacy, reliability or the project latency target."
+  }
+]
