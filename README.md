@@ -2,120 +2,74 @@
 
 **Design and Development of an Explainable Browser Extension for Real-Time Phishing Website Detection**
 
-Software Engineering diploma project, group SE-2422.  
-Supervisor: A. A. Sakhipov, PhD, Assistant Professor.
+Software Engineering diploma project · SE-2422 · Supervisor: A. A. Sakhipov, PhD, Assistant Professor.
 
-## Problem and aim
+## Checkpoint — 24 October 2026
 
-Users can encounter deceptive websites while browsing and may struggle to recognise phishing indicators or interpret security warnings. PhishLens aims to assess phishing indicators on the current webpage and present understandable reasons for its risk assessment.
+This package documents the analysis and design stage. It includes the supplied requirements and schedule, analysis of 12 survey responses, a literature review with eight scientific works, comparisons, architecture, an English interactive UI mock-up, an evaluation plan and authentic YouTrack/supervisor evidence. No trained model, installable extension, running backend or measured detection/performance result is claimed.
 
-The proposed audience includes university students and other everyday internet users. The current research survey focuses on university students aged 18 or older. User needs and assumptions will be refined using collected evidence.
+The supervisor's supplied 24 October message gives general positive feedback and asks for a consolidated PDF report. It is recorded without treating it as detailed technical validation. The school submission is due **24 October at 18:00 Asia/Almaty**. **PHD-1 remains due 26 October** in the preserved task plan.
 
-## Team and responsibilities
+## Team and planned responsibilities
 
-| Team member | GitHub | Planned responsibilities |
+| Member | GitHub | Responsibilities |
 | --- | --- | --- |
-| Aiym Pangerey | [aiympangerey1703](https://github.com/aiympangerey1703) | Team coordination; frontend and backend development jointly with Sabina; architecture, analysis flow, risk display, URL-check API and integration. |
-| Sabina Zhumagaliyeva | [6wq22pbr26-droid](https://github.com/6wq22pbr26-droid) | Frontend and backend development jointly with Aiym; user scenarios, UI prototype, settings, trusted sites, feedback, localisation, storage, reputation integrations and user testing. |
-| Alibek Asylbekuly | [alibek44](https://github.com/alibek44) | Dataset assessment, feature engineering, model training and comparison, evaluation, explainability and model export for integration. |
+| Aiym Pangerey | [aiympangerey1703](https://github.com/aiympangerey1703) | Coordination; shared frontend/backend; architecture, URL workflow, API and integration |
+| Sabina Zhumagaliyeva | [6wq22pbr26-droid](https://github.com/6wq22pbr26-droid) | Shared frontend/backend; popup, settings, localization, storage and system/usability testing |
+| Alibek Asylbekuly | [alibek44](https://github.com/alibek44) | Dataset/features, model training/evaluation, explanations and packaging |
 
-Each task will have one accountable assignee. These responsibilities describe planned work; individual contributions must be evidenced by actual commits, deliverables and reviews.
+Roles describe planned responsibility. Individual completed contributions require actual commits, artefacts and reviews. The YouTrack screenshots display `admin` for some ML tasks; verify that account's identity before attributing it to Alibek. Invitation acceptance and reviewer access must be verified in GitHub.
 
-## Current status — 23 October 2026
+## MVP and later scope
 
-The project is in the analysis and design stage.
+The first MVP checks the active page URL, applies a reproducible baseline model locally where feasible, and presents risk with observable reasons in a popup. A minimal FastAPI contract is planned. An unavailable analysis must never appear as a safe verdict.
 
-- The repository has been created. Invitations were sent to Aiym and Alibek on 22 October; their acceptance has not yet been verified.
-- An English multiple-choice survey has been published. Response analysis is pending.
-- An AI-assisted local draft package contains analysis, requirements, diagrams, a UI prototype and an evaluation plan. It requires team review, updated role assignments and upload to this repository.
-- The team is configuring YouTrack. The final project/board link and task identifiers are pending.
-- User-discussion evidence and substantive supervisor feedback have not yet been incorporated.
-- No trained model, deployable browser extension or backend service is available. No model-quality or runtime-performance results are claimed.
+Later scope includes richer DOM/domain signals, model-explanation packaging, optional reputation checks, caching, settings and kk/ru/en localization, permitted feedback storage, Docker, CI and broader evaluation. URL-only scope and the existing task dates are preserved.
 
-The initial report PDFs are review drafts with outdated role assignments and must not be treated as final submission documents.
-
-## Scope and expected outcomes
-
-The planned MVP includes webpage URL/DOM feature analysis, a risk indication with explanations, trusted-site settings and optional reputation checks. Planned supporting features include feedback and Kazakh, Russian and English interface localisation, subject to agreed scope and available time.
-
-Expected outcomes are an installable browser extension, documented supporting services, a reproducible model evaluation and a report on usability, performance and limitations. The tool will provide risk indications, not a guarantee that a website is safe.
-
-A complete application is not required for the 24 October checkpoint. That checkpoint covers analysis, design, planning, traceable contributions and supervisor review.
-
-## Proposed technologies
-
-| Component | Proposed technologies | Decision status |
-| --- | --- | --- |
-| Browser extension | TypeScript, Manifest V3, Chrome/Edge | Planned; compatibility testing pending |
-| Model development | Python, scikit-learn | Planned; dataset and model comparison pending |
-| Local inference | ONNX Runtime Web | Candidate; export compatibility, size and latency must be evaluated |
-| Backend | FastAPI | Proposed; justification and implementation pending |
-| Storage | PostgreSQL | Proposed; final data requirements and privacy review pending |
-| Packaging and checks | Docker and GitHub Actions | Planned |
-
-Technology choices remain subject to the comparison of alternatives and experimental validation. No target metric should be interpreted as an achieved result.
-
-## Documentation and repository organisation
-
-The following paths describe the prepared local package and intended repository structure. Apart from this README, these materials have not yet been uploaded; paths below are not download links.
+## Contents
 
 | Path | Content |
 | --- | --- |
-| `docs/report.html` | Editable draft covering proposal, relevance, literature, system and technology comparisons, requirements, architecture, prototype, evaluation, management and supervisor feedback |
-| `docs/sources.json` | Draft source catalogue for verification and critical review |
-| `docs/requirements.json` | Initial requirements and acceptance criteria; owner assignments need reconciliation |
-| `docs/survey-questions.txt` | English survey questions |
-| `diagrams/` | Context, use-case and component diagrams, with Mermaid source and SVG exports |
-| `prototype/index.html` | Interactive UI mock-up |
-| `tests/` | Manual prototype checklist and package-structure checks |
-| `management/` | Draft task plan and templates for recording genuine discussion and supervisor-review evidence |
-| `config/` | Configuration examples and project-link placeholders |
-| `src/` | Implementation status; production implementation pending |
+| [Consolidated report](docs/01_PhishLens_Consolidated_Report.pdf) | Main PDF, all sections and evidence appendices |
+| [YouTrack evidence](docs/02_YouTrack_Board_and_Tasks.pdf) | Separate landscape PDF of the real board and tasks |
+| [Editable report](docs/00_PhishLens_Consolidated_Report.docx) | Word source |
+| [Requirements](docs/01_Requirements_and_MVP_Scope.docx) | Supplied MVP with English names and review note |
+| [Feedback record](docs/02_Supervisor_Feedback_Record.docx) | Faithful record of supplied supervisor messages |
+| [Change record](docs/03_Team_Response_and_Change_Record.docx) | Changes made and preserved scope |
+| [Complete source package](docs/PhishLens_Source_Package.zip) | Extract for the editable web report, original evidence, diagrams, prototype and task plan |
+| `docs/sources.json` / `docs/requirements.json` | Source catalogue and requirements |
+| `docs/evidence/` | Original survey, YouTrack and supervisor screenshots |
+| `diagrams/` | Editable Mermaid diagrams and SVG design views |
+| UI prototype inside the source ZIP | English, manually selected demonstration states |
+| `management/task-plan.json` | Preserved 19-task schedule; not a live export |
+| `tests/manual-checklist.txt` | Interface and evidence review checks |
 
-Before submission, the literature review must meaningfully use at least 12 sources, including 8 scientific publications. Comparisons must cover 3–5 existing systems using 6–10 criteria and at least three technical decisions with 2–3 alternatives each. The final report must distinguish evidence from assumptions.
+PDF and Word files are directly available under docs. The complete directory structure for the prototype, diagrams, evidence and editable web report is preserved inside docs/PhishLens_Source_Package.zip; extract the ZIP before opening those files. The report records the evidence status at assembly time; live access and actual peer review remain to be verified.
 
-## Project links
+## Open the prototype
 
-- Repository: https://github.com/6wq22pbr26-droid/phishlens-diploma
-- English research survey: https://docs.google.com/forms/d/e/1FAIpQLSeKItS51CarKIaIW3Mt9TAiw5Keploe_ShI60XnwVSWySVP2g/viewform
-- YouTrack project and board: **pending team setup; link will be added after confirmation**.
-- Reviewed documentation and prototype links: **pending upload**.
+Download the repository/package and open `prototype/index.html` in a browser. No server, dependency installation or account is needed. Select Loading, Low risk, Warning and Unavailable. Expand technical details and try the unavailable-state retry control. The prototype sends no network requests and provides no phishing protection.
 
-The survey is a research instrument, not the university submission form. Survey responses alone do not automatically replace the required 3–5 user discussions or a substantive agreement with an actual client.
+Production installation and model reproduction instructions will be added when those components exist. Candidate technologies are TypeScript/Manifest V3, Python/scikit-learn, ONNX Runtime Web and FastAPI; their alternatives and validation gates are in the report.
 
-## Setup and verification
+## Research status and limitations
 
-There is no installable extension or runnable backend in this repository yet.
+The survey has 12 responses; Q7 has 11. Results are exploratory, based on screenshots without a raw export. Q12 contains contradictory exclusive-option selections and is not used to confidently rank barriers. Interest in the idea is not product validation.
 
-After the prototype package is uploaded, open `prototype/index.html` in a browser. It is a UI mock-up with manually selected states; it does not analyse real websites or provide phishing protection. No server or dependencies are required for the mock-up.
+Records of the required 3–5 user discussions or a substantive client agreement were not supplied. The survey does not automatically replace that evidence. No interview records, user tests, model metrics, teammate reviews or contributions have been invented. The documents were assembled with AI assistance and require the team's actual ownership and review.
 
-After the supporting files are uploaded:
+## Links
 
-- Follow `tests/manual-checklist.txt` to check the prototype scenarios.
-- Run `python3 tests/check_package.py` from the repository root for a package-structure check.
+- [Repository](https://github.com/6wq22pbr26-droid/phishlens-diploma)
+- [YouTrack instance](https://aiympangerey1703.youtrack.cloud) — project: Explainable Phishing Detection (PHD); exact project/board link and access must be checked in the service.
+- [English student survey](https://docs.google.com/forms/d/e/1FAIpQLSeKItS51CarKIaIW3Mt9TAiw5Keploe_ShI60XnwVSWySVP2g/viewform)
 
-A structure check does not validate the literature, research evidence, model accuracy or extension behaviour. Reproducible installation and test commands for implemented components will be added when those components exist.
+## Workflow and access
 
-## Contribution and review workflow
+Use the actual PHD task ID in branches, commits and pull requests. Another member reviews substantive changes; link the PR to YouTrack. Mark work Done only when its acceptance conditions are met. Create the submission tag only on the reviewed commit. Preserve real authorship and dates.
 
-1. Create a meaningful YouTrack task with an assignee, priority, deadline, expected result and acceptance criteria.
-2. Use the actual YouTrack task ID in the branch name, commit message and Pull Request description.
-3. Each contributor works through their own identifiable GitHub account and records coherent changes as work is completed.
-4. Open a Pull Request explaining the change, task reference and verification performed.
-5. Another team member reviews the change before it is merged into `main`.
-6. Link the Pull Request or commit from YouTrack. Mark the task complete only after its acceptance criteria are met.
-7. Tag the reviewed submission version using the stage tag required by the school; do not move a tag after submission.
+Before submission, verify that the supervisor and commission can open the private repository and YouTrack board, and that Aiym and Alibek have accepted invitations. The submitted screenshots show 18 Backlog tasks and PHD-1 in Review; they are historical snapshots, not proof of later completion.
 
-The initial repository setup is not evidence of completed individual work. Do not backdate contributions or record unperformed research, tests or reviews.
+## Data handling
 
-## Checkpoint and access
-
-Submission deadline: **24 October 2026, 18:00, Asia/Almaty**.
-
-Remaining checkpoint work includes reviewing and uploading the draft materials, adding genuine research findings, obtaining and addressing supervisor feedback, completing the YouTrack board, and documenting individual contributions and reviews.
-
-The submission requires a consolidated report PDF and a separate PDF containing screenshots of the real YouTrack board and tasks. The private repository and linked materials must be accessible to the supervisor and committee before submission. Their access has not yet been verified.
-
-## Data handling and limitations
-
-Do not commit passwords, API keys, private credentials, identifiable survey responses or interview transcripts. Use anonymised summaries and placeholder configuration values. Assess dataset licences, attribution requirements, duplicate records and train/test leakage before using data. Model export, local inference and external reputation services must be evaluated before their capabilities are claimed.
+Do not commit passwords, API keys, identifiable respondent records or browsing histories. Local processing is the preferred design. External URL/domain checks require documented consent and data flow. Dataset licences, label mapping, duplicate/domain leakage and online feature availability must be checked before training. F1 ≥ 0.90 and local latency ≤ 200 ms are proposed targets, not achieved results.
